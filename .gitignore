@@ -17,8 +17,46 @@ pnpm-debug.log*
 .env
 .env.production
 
+# ignore all .env.* files (e.g., .env.local, .env.development)
+.env.*
+
 # macOS-specific files
 .DS_Store
 
-# jetbrains setting folder
+# JetBrains setting folder
 .idea/
+
+# VS Code settings
+.vscode/
+
+# Bun dependencies
+.bun/
+
+# lock files (optional, based on your project management)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+bun.lockb
+
+# Docker-related files
+Dockerfile*
+docker-compose*.yml
+.dockerignore
+docker-compose.override.yml
+docker-compose.local.yml
+
+# Docker artifacts
+docker-compose.override.yml
+docker-compose.dev.yml
+docker-compose.prod.yml
+
+# Docker volumes (if mapped to local folders)
+volumes/
+tmp/
+*.pid
+*.seed
+*.sock
+
+# Docker logs
+*.log
+logs/
