@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css";
+import ResponsiveMainNavbar from '@/components/Navbar/ResponsiveMainNavbar'
 ---
 
 <!doctype html>
@@ -8,10 +9,19 @@ import "../styles/global.css";
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+		<!-- Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+  		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet"/>
+		
 		<meta name="generator" content={Astro.generator} />
 		<title>The Peaky Blindev</title>
 	</head>
 	<body>
+		<header>
+			<ResponsiveMainNavbar client:load />
+		</header>
 		<slot />
 	</body>
 </html>
